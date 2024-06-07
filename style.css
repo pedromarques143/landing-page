@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     background-color: #1F2937;
     justify-content: space-between;
+    font-family: roboto;
 }
 .header {
     display: flex;
@@ -14,9 +15,15 @@ body {
 }
 
 .logo {
-    font-family: roboto;
     color: #F9FAF8;
     font-size: 24px;
+}
+
+ul {
+    list-style: none;
+    display: inline-block;
+    display: flex;
+    gap: 25px;
 }
 
 .top-part {
@@ -32,13 +39,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
 }
 
 .signup-container h1 {
     font-size: 48px;
     color:#F9FAF8;
     font-weight: extra-bold;
+    margin: 0px;
 }
 
 .header-links,
@@ -47,23 +54,38 @@ body {
     color: #E5E7EB;
 }
 
+.signup-container button {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 70px;
+    border-style: none;
+}
+
 .image-placeholder {
     height: 200px;
     width: 400px;
     background-color: #f3f0f0;
+    flex-shrink: 0;
+    margin-bottom: 70px;
 }
 
-
+/*this is the bottom half of the page*/
 
 .bottom-part {
     background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-li {
-    list-style: none;
-    display: inline-block;
+.bottom-part h2 {
+    margin: 35px;
 }
 
-
-
+.bottom-part .card-container {
+    display: flex;;
+}
 
